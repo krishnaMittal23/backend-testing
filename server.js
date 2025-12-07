@@ -13,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// In-memory storage for todos
+// In-memory storage for todos (for development/testing purposes only)
+// Note: Data will be lost when the server restarts
 let todos = [];
 let todoIdCounter = 1;
 
